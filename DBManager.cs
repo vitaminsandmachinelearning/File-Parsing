@@ -13,9 +13,9 @@ namespace File_Parse
         string connectionString;
         SqlConnection connection;
 
-        public DBManager(string _connectionString)
+        public DBManager(string connectionString)
         {
-            connectionString = _connectionString;
+            this.connectionString = connectionString;
             try
             {
                 //Test connection to make sure database can be accessed
